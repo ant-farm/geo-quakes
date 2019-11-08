@@ -1,17 +1,22 @@
 import React, { Component } from 'react';
+import GoogleApiWrapper from './MapContainer'
+import QuakeContainer from './QuakeContainer'
+import MapContainer from './MapContainer'
+
+
 
 class App extends Component {
 
-
   render() {
     return (
+
       <div className="app">
         <div className="mapContainer">
-          ...put Map Component here...
+        <MapContainer />
         </div>
         <div className="quakeContainer">
           <h1>Earthquakes from the past week: </h1>
-          ...put Quakes Component here...
+          <QuakeContainer />
         </div>
       </div>
     );
