@@ -34,13 +34,11 @@ export class QuakeContainer extends Component {
 
 			</div>)
 		})
-		// console.log(returnedQuakes.id)
+		
 		return returnedQuakes
 
 	}
-// return this.state.quakes.map((quakes) => {
-// 			console.log(quakes)
-// 		})
+
 	componentDidMount(){
 		this.getQuakes()
 	}

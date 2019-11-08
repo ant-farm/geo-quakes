@@ -15,7 +15,10 @@ export class MapContainer extends Component {
   }
     return (
       <div class='map'>
-      <Map google={this.props.google} zoom={14} style={style}>
+      <Map google={this.props.google} zoom={14} style={style} initialCenter={{
+            lat: 41.881832,
+            lng: -87.623177
+          }}>
  
         <Marker onClick={this.onMarkerClick}
                 name={'Current location'} />
